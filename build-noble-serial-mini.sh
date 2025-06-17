@@ -64,7 +64,7 @@ http://archive.ubuntu.com/ubuntu noble main restricted universe multiverse" > /e
 apt-get update
 
 # pull minimal Ubuntu GRUB + shim stack + kernmel
-apt-get -y install grub-efi-amd64-signed shim-signed linux-image-oem-24.04
+apt-get -y install grub-common grub-efi-amd64-signed shim-signed linux-image-oem-24.04
 
 # upgrade everything else
 apt-get -y dist-upgrade
